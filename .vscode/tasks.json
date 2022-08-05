@@ -3,11 +3,12 @@
 	"tasks": [
 		{
 			"type": "npm",
-			"script": "tauri build -- --debug",
+			"script": "task1",
 			"problemMatcher": [],
 			"label": "tauri: dev",
-			"detail": "npm run tauri build -- --debug"
-		},
+			"detail": "npm run tauri build --debug",
+			"group": "test",
+		}
 		
 	]
 }
