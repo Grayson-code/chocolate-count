@@ -19,7 +19,7 @@
 
 <main>
   <h1>Chocolates For Me!</h1>
-  <p>Chocolates in {relativeTime}</p>
+  <p>Chocolates {relativeTime}</p>
   <button on:click={handleClick}>
     Add :)
   </button>
