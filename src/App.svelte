@@ -3,7 +3,7 @@
   import localforage from "localforage";
   import { onMount } from "svelte";
   let count: any;
-  const relativeTime = moment("20230212", "YYYYMMDD").fromNow();
+  const relativeTime = moment("20240212", "YYYYMMDD").fromNow();
   onMount(async () => {
     count = await localforage.getItem('count')
   });
