@@ -2,8 +2,8 @@
   import moment from "moment";
   import localforage from "localforage";
   import { onMount } from "svelte";
-  let count: any;
-  const relativeTime = moment("20230212", "YYYYMMDD").fromNow();
+  let count: number = 0;
+  const relativeTime = moment("20250212", "YYYYMMDD").fromNow();
   onMount(async () => {
     count = await localforage.getItem('count')
   });
@@ -19,7 +19,7 @@
 
 <main>
   <h1>Chocolates For Me!</h1>
-  <p>Chocolates in {relativeTime}</p>
+  <p>Chocolates {relativeTime} (feb 12)</p>
   <button on:click={handleClick}>
     Add :)
   </button>
